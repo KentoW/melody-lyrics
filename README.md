@@ -1,7 +1,7 @@
 # Melody-lyric alignment data
 All source URLs of the 1,000 songs for creating melody-lyric alignment data [[1]](#1)
 
-In progress (150 songs / 1,000 songs)
+In progress (512 songs / 1,000 songs)
 
 
 ---
