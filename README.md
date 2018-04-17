@@ -4,6 +4,7 @@ All source URLs of the 1,000 songs for creating melody-lyric alignment data [[1]
 In progress (512 songs / 1,000 songs)
 
 
+
 ---
 
 - <i id=1></i>[1] Kento Watanabe, Yuichiroh Matsubayashi, Satoru Fukayama, Masataka Goto, Kentaro Inui and Tomoyasu Nakano. A Melody-conditioned Lyrics Language Model. 
