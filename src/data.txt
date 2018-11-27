@@ -1,0 +1,205 @@
+@bos	artist:anonymous	title:sample
+@bob
+@bol	これはサンプルです
+@bop	これ は	0 1D 0/1 0.000000
+@bow	これ	名詞,代名詞,一般,*,*,*,これ,コレ,コレ
+	Sur:コ Roma:ko Accent:L NoteNum:60 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:コ InstanceIdx:0001 StartTime:2.0 StartTimeReadable:0/0/2.0 Duration:0.5
+	Sur:レ Roma:re Accent:H NoteNum:62 Modulation:0 Tempo:120.0 Length:480 Beat:2 Intensity:100 Lyric:レ InstanceIdx:0002 StartTime:2.5 StartTimeReadable:0/0/2.5 Duration:0.5
+@eow
+@bow	は	助詞,係助詞,*,*,*,*,は,ハ,ワ
+	Sur:ワ Roma:wa Accent:H NoteNum:64 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:ハ InstanceIdx:0003 StartTime:3.0 StartTimeReadable:0/0/3.0 Duration:0.5
+@eow
+@eop
+@bop	サンプル です	1 -1D 0/1 0.000000
+@bow	サンプル	名詞,一般,*,*,*,*,サンプル,サンプル,サンプル
+	Sur:サ Roma:sa Accent:H NoteNum:65 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:サ InstanceIdx:0004 StartTime:3.5 StartTimeReadable:0/0/3.5 Duration:0.5
+	Sur:ン Roma:N Accent:L NoteNum:67 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:ン InstanceIdx:0005 StartTime:4.0 StartTimeReadable:0/0/4.0 Duration:0.5
+	Sur:プ Roma:pu Accent:L NoteNum:69 Modulation:0 Tempo:120.0 Length:480 Beat:2 Intensity:100 Lyric:プ InstanceIdx:0006 StartTime:4.5 StartTimeReadable:0/0/4.5 Duration:0.5
+	Sur:ル Roma:ru Accent:L NoteNum:71 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:ル InstanceIdx:0007 StartTime:5.0 StartTimeReadable:0/0/5.0 Duration:0.5
+@eow
+@bow	です	助動詞,*,*,*,特殊・デス,基本形,です,デス,デス
+	Sur:デ Roma:de Accent:L NoteNum:72 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:デ InstanceIdx:0008 StartTime:5.5 StartTimeReadable:0/0/5.5 Duration:0.5
+	Sur:ス Roma:su Accent:L NoteNum:71 Modulation:0 Tempo:120.0 Length:1920 Beat:1 Intensity:100 Lyric:ス InstanceIdx:0009 StartTime:6.0 StartTimeReadable:0/0/6.0 Duration:2.0
+@eow
+@eop
+@eol
+@bol	歌詞は行と段落で構成されます
+@bop	歌詞 は	0 3D 0/1 -1.442390
+@bow	歌詞	名詞,一般,*,*,*,*,歌詞,カシ,カシ
+	Sur:カ Roma:ka Accent:H NoteNum:60 Modulation:0 Tempo:120.0 Length:480 Beat:2 Intensity:100 Lyric:カ InstanceIdx:0011 StartTime:8.5 StartTimeReadable:0/0/8.5 Duration:0.5
+	Sur:シ Roma:shi Accent:L NoteNum:62 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:シ InstanceIdx:0012 StartTime:9.0 StartTimeReadable:0/0/9.0 Duration:0.5
+@eow
+@bow	は	助詞,係助詞,*,*,*,*,は,ハ,ワ
+	Sur:ワ Roma:wa Accent:L
+@eow
+@eop
+@bop	行 と	1 2D 0/1 1.007169
+@bow	行	名詞,一般,*,*,*,*,行,クダリ,クダリ
+	Sur:ク Roma:ku Accent:L NoteNum:64 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:ハ InstanceIdx:0013 StartTime:9.5 StartTimeReadable:0/0/9.5 Duration:0.5
+	Sur:ダ Roma:da Accent:L NoteNum:65 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:ギョ InstanceIdx:0014 StartTime:10.0 StartTimeReadable:0/0/10.0 Duration:0.5
+	Sur:リ Roma:ri Accent:L NoteNum:67 Modulation:0 Tempo:120.0 Length:480 Beat:2 Intensity:100 Lyric:ウ InstanceIdx:0015 StartTime:10.5 StartTimeReadable:0/0/10.5 Duration:0.5
+@eow
+@bow	と	助詞,並立助詞,*,*,*,*,と,ト,ト
+	Sur:ト Roma:to Accent:L NoteNum:69 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:ト InstanceIdx:0016 StartTime:11.0 StartTimeReadable:0/0/11.0 Duration:0.5
+@eow
+@eop
+@bop	段落 で	2 3D 0/1 -1.442390
+@bow	段落	名詞,一般,*,*,*,*,段落,ダンラク,ダンラク
+	Sur:ダ Roma:da Accent:L NoteNum:71 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:ダ InstanceIdx:0017 StartTime:11.5 StartTimeReadable:0/0/11.5 Duration:0.5
+	Sur:ン Roma:N Accent:H NoteNum:69 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:ン InstanceIdx:0018 StartTime:12.0 StartTimeReadable:0/0/12.0 Duration:0.5
+	Sur:ラ Roma:ra Accent:H NoteNum:67 Modulation:0 Tempo:120.0 Length:480 Beat:2 Intensity:100 Lyric:ラ InstanceIdx:0019 StartTime:12.5 StartTimeReadable:0/0/12.5 Duration:0.5
+	Sur:ク Roma:ku Accent:H NoteNum:65 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:ク InstanceIdx:0020 StartTime:13.0 StartTimeReadable:0/0/13.0 Duration:0.5
+@eow
+@bow	で	助詞,格助詞,一般,*,*,*,で,デ,デ
+	Sur:デ Roma:de Accent:H NoteNum:64 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:デ InstanceIdx:0021 StartTime:13.5 StartTimeReadable:0/0/13.5 Duration:0.5
+@eow
+@eop
+@bop	構成 さ れ ます	3 -1D 1/3 0.000000
+@bow	構成	名詞,サ変接続,*,*,*,*,構成,コウセイ,コーセイ
+	Sur:コ Roma:ko Accent:L NoteNum:62 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:コ InstanceIdx:0022 StartTime:14.0 StartTimeReadable:0/0/14.0 Duration:0.5
+	Sur:セ Roma:se Accent:H NoteNum:62 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:セ InstanceIdx:0024 StartTime:15.0 StartTimeReadable:0/0/15.0 Duration:0.5
+	Sur:イ Roma:i Accent:H NoteNum:64 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:イ InstanceIdx:0025 StartTime:15.5 StartTimeReadable:0/0/15.5 Duration:0.5
+@eow
+@bow	さ	動詞,自立,*,*,サ変・スル,未然レル接続,する,サ,サ
+	Sur:サ Roma:sa Accent:H NoteNum:65 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:サ InstanceIdx:0026 StartTime:16.0 StartTimeReadable:0/0/16.0 Duration:0.5
+@eow
+@bow	れ	動詞,接尾,*,*,一段,連用形,れる,レ,レ
+	Sur:レ Roma:re Accent:H NoteNum:67 Modulation:0 Tempo:120.0 Length:480 Beat:2 Intensity:100 Lyric:レ InstanceIdx:0027 StartTime:16.5 StartTimeReadable:0/0/16.5 Duration:0.5
+@eow
+@bow	ます	助動詞,*,*,*,特殊・マス,基本形,ます,マス,マス
+	Sur:マ Roma:ma Accent:L NoteNum:69 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:マ InstanceIdx:0028 StartTime:17.0 StartTimeReadable:0/0/17.0 Duration:0.5
+	Sur:ス Roma:su Accent:L NoteNum:71 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:ス InstanceIdx:0029 StartTime:17.5 StartTimeReadable:0/0/17.5 Duration:0.5
+@eow
+@eop
+@eol
+@eob
+@bob
+@bol	段落の間には1行の空行があります
+@bop	段落 の	0 1D 0/1 2.708854
+@bow	段落	名詞,一般,*,*,*,*,段落,ダンラク,ダンラク
+	Sur:ダ Roma:da Accent:L NoteNum:60 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:ダ InstanceIdx:0031 StartTime:20.0 StartTimeReadable:0/0/20.0 Duration:0.5
+	Sur:ン Roma:N Accent:H NoteNum:62 Modulation:0 Tempo:120.0 Length:480 Beat:2 Intensity:100 Lyric:ン InstanceIdx:0032 StartTime:20.5 StartTimeReadable:0/0/20.5 Duration:0.5
+	Sur:ラ Roma:ra Accent:H NoteNum:64 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:ラ InstanceIdx:0033 StartTime:21.0 StartTimeReadable:0/0/21.0 Duration:0.5
+	Sur:ク Roma:ku Accent:H NoteNum:65 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:ク InstanceIdx:0034 StartTime:21.5 StartTimeReadable:0/0/21.5 Duration:0.5
+@eow
+@bow	の	助詞,連体化,*,*,*,*,の,ノ,ノ
+	Sur:ノ Roma:no Accent:H NoteNum:67 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:ノ InstanceIdx:0035 StartTime:22.0 StartTimeReadable:0/0/22.0 Duration:0.5
+@eow
+@eop
+@bop	間 に は	1 4D 0/2 -1.781866
+@bow	間	名詞,一般,*,*,*,*,間,マ,マ
+	Sur:マ Roma:ma Accent:L NoteNum:72 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:ダ InstanceIdx:0038 StartTime:23.5 StartTimeReadable:0/0/23.5 Duration:0.5
+@eow
+@bow	に	助詞,格助詞,一般,*,*,*,に,ニ,ニ
+	Sur:ニ Roma:ni Accent:H NoteNum:71 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:ニ InstanceIdx:0039 StartTime:24.0 StartTimeReadable:0/0/24.0 Duration:0.5
+@eow
+@bow	は	助詞,係助詞,*,*,*,*,は,ハ,ワ
+	Sur:ワ Roma:wa Accent:H NoteNum:65 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:チ InstanceIdx:0042 StartTime:25.5 StartTimeReadable:0/0/25.5 Duration:0.5
+@eow
+@eop
+@bop	1 行 の	2 3D 1/2 1.398446
+@bow	1	名詞,数,*,*,*,*,*
+	Sur:1 Roma:1 Accent:L NoteNum:64 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:ギョ InstanceIdx:0043 StartTime:26.0 StartTimeReadable:0/0/26.0 Duration:0.5
+@eow
+@bow	行	名詞,接尾,助数詞,*,*,*,行,コウ,コー
+	Sur:コ Roma:ko Accent:H NoteNum:62 Modulation:0 Tempo:120.0 Length:480 Beat:2 Intensity:100 Lyric:ウ InstanceIdx:0044 StartTime:26.5 StartTimeReadable:0/0/26.5 Duration:0.5
+@eow
+@bow	の	助詞,連体化,*,*,*,*,の,ノ,ノ
+	Sur:ノ Roma:no Accent:L NoteNum:60 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:ノ InstanceIdx:0045 StartTime:27.0 StartTimeReadable:0/0/27.0 Duration:0.5
+@eow
+@eop
+@bop	空 行 が	3 4D 1/2 -1.781866
+@bow	空	名詞,一般,*,*,*,*,空,ソラ,ソラ
+	Sur:ソ Roma:so Accent:L
+	Sur:ラ Roma:ra Accent:H
+@eow
+@bow	行	名詞,一般,*,*,*,*,行,クダリ,クダリ
+	Sur:ク Roma:ku Accent:H NoteNum:62 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:ク InstanceIdx:0046 StartTime:27.5 StartTimeReadable:0/0/27.5 Duration:0.5
+	Sur:ダ Roma:da Accent:H NoteNum:65 Modulation:0 Tempo:120.0 Length:480 Beat:2 Intensity:100 Lyric:ギョ InstanceIdx:0048 StartTime:28.5 StartTimeReadable:0/0/28.5 Duration:0.5
+	Sur:リ Roma:ri Accent:H NoteNum:67 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:ウ InstanceIdx:0049 StartTime:29.0 StartTimeReadable:0/0/29.0 Duration:0.5
+@eow
+@bow	が	助詞,格助詞,一般,*,*,*,が,ガ,ガ
+	Sur:ガ Roma:ga Accent:H NoteNum:69 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:ガ InstanceIdx:0050 StartTime:29.5 StartTimeReadable:0/0/29.5 Duration:0.5
+@eow
+@eop
+@bop	あり ます	4 -1D 0/1 0.000000
+@bow	あり	動詞,自立,*,*,五段・ラ行,連用形,ある,アリ,アリ
+	Sur:ア Roma:a Accent:L NoteNum:71 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:ア InstanceIdx:0051 StartTime:30.0 StartTimeReadable:0/0/30.0 Duration:0.5
+	Sur:リ Roma:ri Accent:H NoteNum:72 Modulation:0 Tempo:120.0 Length:480 Beat:2 Intensity:100 Lyric:リ InstanceIdx:0052 StartTime:30.5 StartTimeReadable:0/0/30.5 Duration:0.5
+@eow
+@bow	ます	助動詞,*,*,*,特殊・マス,基本形,ます,マス,マス
+	Sur:マ Roma:ma Accent:L NoteNum:71 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:マ InstanceIdx:0053 StartTime:31.0 StartTimeReadable:0/0/31.0 Duration:0.5
+	Sur:ス Roma:su Accent:L NoteNum:69 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:ス InstanceIdx:0054 StartTime:31.5 StartTimeReadable:0/0/31.5 Duration:0.5
+@eow
+@eop
+@eol
+@eob
+@bob
+@bol	英語が混ざっている日本語の曲も対応しています
+@bop	英語 が	0 1D 0/1 1.839967
+@bow	英語	名詞,一般,*,*,*,*,英語,エイゴ,エイゴ
+	Sur:エ Roma:e Accent:L NoteNum:60 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:エ InstanceIdx:0056 StartTime:34.0 StartTimeReadable:0/0/34.0 Duration:0.5
+	Sur:イ Roma:i Accent:H NoteNum:62 Modulation:0 Tempo:120.0 Length:480 Beat:2 Intensity:100 Lyric:イ InstanceIdx:0057 StartTime:34.5 StartTimeReadable:0/0/34.5 Duration:0.5
+	Sur:ゴ Roma:go Accent:H NoteNum:64 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:ゴ InstanceIdx:0058 StartTime:35.0 StartTimeReadable:0/0/35.0 Duration:0.5
+@eow
+@bow	が	助詞,格助詞,一般,*,*,*,が,ガ,ガ
+	Sur:ガ Roma:ga Accent:H NoteNum:65 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:ガ InstanceIdx:0059 StartTime:35.5 StartTimeReadable:0/0/35.5 Duration:0.5
+@eow
+@eop
+@bop	混ざっ て いる	1 2D 0/2 0.861688
+@bow	混ざっ	動詞,自立,*,*,五段・ラ行,連用タ接続,混ざる,マザッ,マザッ
+	Sur:マ Roma:ma Accent:L NoteNum:67 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:マ InstanceIdx:0060 StartTime:36.0 StartTimeReadable:0/0/36.0 Duration:0.5
+	Sur:ザ Roma:za Accent:H NoteNum:69 Modulation:0 Tempo:120.0 Length:480 Beat:2 Intensity:100 Lyric:ザ InstanceIdx:0061 StartTime:36.5 StartTimeReadable:0/0/36.5 Duration:0.5
+	Sur:ッ Roma:q Accent:H
+@eow
+@bow	て	助詞,接続助詞,*,*,*,*,て,テ,テ
+	Sur:テ Roma:te Accent:H NoteNum:71 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:テ InstanceIdx:0062 StartTime:37.0 StartTimeReadable:0/0/37.0 Duration:0.5
+@eow
+@bow	いる	動詞,非自立,*,*,一段,基本形,いる,イル,イル
+	Sur:イ Roma:i Accent:H NoteNum:72 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:イ InstanceIdx:0063 StartTime:37.5 StartTimeReadable:0/0/37.5 Duration:0.5
+	Sur:ル Roma:ru Accent:H NoteNum:71 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:ル InstanceIdx:0064 StartTime:38.0 StartTimeReadable:0/0/38.0 Duration:0.5
+@eow
+@eop
+@bop	日本語 の	2 3D 0/1 2.036034
+@bow	日本語	名詞,一般,*,*,*,*,日本語,ニホンゴ,ニホンゴ
+	Sur:ニ Roma:ni Accent:L NoteNum:69 Modulation:0 Tempo:120.0 Length:480 Beat:2 Intensity:100 Lyric:ニ InstanceIdx:0065 StartTime:38.5 StartTimeReadable:0/0/38.5 Duration:0.5
+	Sur:ホ Roma:ho Accent:H NoteNum:67 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:ホ InstanceIdx:0066 StartTime:39.0 StartTimeReadable:0/0/39.0 Duration:0.5
+	Sur:ン Roma:N Accent:H NoteNum:65 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:ン InstanceIdx:0067 StartTime:39.5 StartTimeReadable:0/0/39.5 Duration:0.5
+	Sur:ゴ Roma:go Accent:H NoteNum:64 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:ゴ InstanceIdx:0068 StartTime:40.0 StartTimeReadable:0/0/40.0 Duration:0.5
+@eow
+@bow	の	助詞,連体化,*,*,*,*,の,ノ,ノ
+	Sur:ノ Roma:no Accent:L NoteNum:62 Modulation:0 Tempo:120.0 Length:480 Beat:2 Intensity:100 Lyric:ノ InstanceIdx:0069 StartTime:40.5 StartTimeReadable:0/0/40.5 Duration:0.5
+@eow
+@eop
+@bop	曲 も	3 4D 0/1 2.036034
+@bow	曲	名詞,一般,*,*,*,*,曲,キョク,キョク
+	Sur:キョ Roma:kyo Accent:L NoteNum:60 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:キョ InstanceIdx:0070 StartTime:41.0 StartTimeReadable:0/0/41.0 Duration:0.5
+	Sur:ク Roma:ku Accent:H NoteNum:62 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:ク InstanceIdx:0071 StartTime:41.5 StartTimeReadable:0/0/41.5 Duration:0.5
+@eow
+@bow	も	助詞,係助詞,*,*,*,*,も,モ,モ
+	Sur:モ Roma:mo Accent:H NoteNum:64 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:モ InstanceIdx:0072 StartTime:42.0 StartTimeReadable:0/0/42.0 Duration:0.5
+@eow
+@eop
+@bop	対応 し て い ます	4 -1D 1/4 0.000000
+@bow	対応	名詞,サ変接続,*,*,*,*,対応,タイオウ,タイオー
+	Sur:タ Roma:ta Accent:L NoteNum:65 Modulation:0 Tempo:120.0 Length:480 Beat:2 Intensity:100 Lyric:タ InstanceIdx:0073 StartTime:42.5 StartTimeReadable:0/0/42.5 Duration:0.5
+	Sur:イ Roma:i Accent:H NoteNum:67 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:イ InstanceIdx:0074 StartTime:43.0 StartTimeReadable:0/0/43.0 Duration:0.5
+	Sur:オ Roma:o Accent:H NoteNum:69 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:オ InstanceIdx:0075 StartTime:43.5 StartTimeReadable:0/0/43.5 Duration:0.5
+@eow
+@bow	し	動詞,自立,*,*,サ変・スル,連用形,する,シ,シ
+	Sur:シ Roma:shi Accent:H NoteNum:72 Modulation:0 Tempo:120.0 Length:480 Beat:2 Intensity:100 Lyric:シ InstanceIdx:0077 StartTime:44.5 StartTimeReadable:0/0/44.5 Duration:0.5
+@eow
+@bow	て	助詞,接続助詞,*,*,*,*,て,テ,テ
+	Sur:テ Roma:te Accent:H NoteNum:71 Modulation:0 Tempo:120.0 Length:480 Beat:3 Intensity:100 Lyric:テ InstanceIdx:0078 StartTime:45.0 StartTimeReadable:0/0/45.0 Duration:0.5
+@eow
+@bow	い	動詞,非自立,*,*,一段,連用形,いる,イ,イ
+	Sur:イ Roma:i Accent:H NoteNum:69 Modulation:0 Tempo:120.0 Length:480 Beat:4 Intensity:100 Lyric:イ InstanceIdx:0079 StartTime:45.5 StartTimeReadable:0/0/45.5 Duration:0.5
+@eow
+@bow	ます	助動詞,*,*,*,特殊・マス,基本形,ます,マス,マス
+	Sur:マ Roma:ma Accent:L NoteNum:67 Modulation:0 Tempo:120.0 Length:480 Beat:1 Intensity:100 Lyric:マ InstanceIdx:0080 StartTime:46.0 StartTimeReadable:0/0/46.0 Duration:0.5
+	Sur:ス Roma:su Accent:L NoteNum:65 Modulation:0 Tempo:120.0 Length:1440 Beat:2 Intensity:100 Lyric:ス InstanceIdx:0081 StartTime:46.5 StartTimeReadable:0/0/46.5 Duration:1.5
+@eow
+@eop
+@eol
+@eob
+@eos
