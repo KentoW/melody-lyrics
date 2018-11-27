@@ -33,7 +33,7 @@ for strm in open("./dic/en2kana.txt", "r"):
 
 """ 
 For extracting Japanese accect information,  we used UniDic (http://unidic.ninjal.ac.jp/).
-However, it is very difficult to analyze Unicode accent information (see https://repository.dl.itc.u-tokyo.ac.jp/?action=repository_action_common_download&item_id=3407&item_no=1&attribute_id=14&file_no=1 Chapter2).
+However, it is very difficult to analyze UniDic accent information (see https://repository.dl.itc.u-tokyo.ac.jp/?action=repository_action_common_download&item_id=3407&item_no=1&attribute_id=14&file_no=1 Chapter2).
 We inplemented accent parser below accoding to this paper.
 """
 def get_accent(phrase):
@@ -42,19 +42,18 @@ def get_accent(phrase):
     out_mora = 0
     head_f = False
     for morph in accent_tagger.parse(phrase.encode('utf-8')).split('\n'):
-        if len(morph.split("\t")) <= 8:break        # アクセントの情報が無いものは計算不能なので却下
+        if len(morph.split("\t")) <= 8:break        
         if morph == "EOS" or morph == "": continue
         mora = get_mora(morph.split("\t")[1])
         pos = morph.split("\t")[4].split("-")[0]
         if morph.split("\t")[7] == "":
-            acc_position = 0        # アクセント核を持たないので平板とする
+            acc_position = 0        
         else:
             acc_position = int(morph.split("\t")[7].split(",")[0])
         if morph.split("\t")[8] == "":
             acc_joint = None
         else:
             acc_joint = morph.split("\t")[8]
-        # 結合規則をする前に修飾規則を適応する
         if morph.split("\t")[9] != "":
             acc_metric = morph.split("\t")[9]
             M, back_m = acc_metric.split("@")
@@ -72,18 +71,16 @@ def get_accent(phrase):
                     acc_position = mora - int(back_m)
         else:
             acc_metric = None
-        # step1: アクセント結合規則を調べる
+        # step1: accent rule
         if acc_joint:
-            # step1.0: 接頭辞アクセント結合規則
             if acc_joint[0] == "P":
                 head_f = True
             else:
-                if len(accent_info) == 0:       # 文節の先頭の時
+                if len(accent_info) == 0:
                     out_accent = acc_position
-                else:           # 先頭文節以降
+                else:
                     prev_acc_joint = accent_info[-1][2]
                     prev_pos = accent_info[-1][4]
-                    # step1.3: 接頭辞アクセント結合規則
                     if head_f == True and "名詞" in pos:
                         if prev_acc_joint == "P1":       # 一体化型
                             if acc_position == 0:
@@ -103,45 +100,43 @@ def get_accent(phrase):
                         elif prev_acc_joint == "P6":       # 平板型
                             out_accent = 0
                         head_f = False
-                    # step1.1: 付属語アクセント結合規則     # 品詞%F6@1,-1,品詞%F4@1 みたいなひどい形式がある（単純にカンマでsplitしたくない）
                     elif len(acc_joint.split(",")[0].split("%")) > 1:
                         acc_joints = acc_joint.split(",")
                         for j in xrange(len(acc_joints)):
                             sub_rule = acc_joints[j]
-                            if j+1 < len(acc_joints):    # 後ろを確認する
-                                if len(acc_joints[j].split("%")) == 1:    # F6のようなフォーマットの時
+                            if j+1 < len(acc_joints):
+                                if len(acc_joints[j].split("%")) == 1:
                                     continue
-                                if len(acc_joints[j+1].split("%")) == 1:    # F6のようなフォーマットの時
+                                if len(acc_joints[j+1].split("%")) == 1:
                                     sub_rule = acc_joints[j] + "," + acc_joints[j+1]
-                            if len(sub_rule.split("%")) == 1: continue  # これは辞書フォーマットのバグのせい
+                            if len(sub_rule.split("%")) == 1: continue  
                             sub_rule_pos = sub_rule.split("%")[0]
                             sub_rule_F = sub_rule.split("%")[1]
                             if sub_rule_pos in prev_pos:
                                 F = sub_rule_F.split("@")[0]
-                                if F == "F1":       # 従属型(そのまま)
+                                if F == "F1":   
                                     pass
                                 elif F == "F2":     # 不完全支配型
                                     joint_value = int(sub_rule_F.split("@")[1].split(",")[0])
-                                    if out_accent == 0:  # 0型アクセントに接続した場合は結合アクセント価を足す
+                                    if out_accent == 0:  
                                         out_accent = out_mora +  joint_value
                                 elif F == "F3":     # 融合型
                                     joint_value = int(sub_rule_F.split("@")[1].split(",")[0])
-                                    if out_accent != 0:  # 0型アクセント以外に接続した場合は結合アクセント価を足す
+                                    if out_accent != 0:  
                                         out_accent = out_mora + joint_value
-                                elif F == "F4":     # 支配型 とにかく結合アクセント価を足す
+                                elif F == "F4":     # 支配型 
                                     joint_value = int(sub_rule_F.split("@")[1].split(",")[0])
                                     out_accent = out_mora + joint_value
-                                elif F == "F5":     # 平板型 アクセントが消失する
+                                elif F == "F5":     # 平板型 
                                     out_accent = 0
                                 elif F == "F6": 
                                     joint_value1 = int(sub_rule_F.split("@")[1].split(",")[0])
                                     joint_value2 = int(sub_rule_F.split("@")[1].split(",")[1])
-                                    if out_accent == 0:  # 0型アクセントに接続した場合は第一結合アクセント価を足す
+                                    if out_accent == 0:  
                                         out_accent = out_mora + joint_value1
-                                    else:  # 0型アクセント以外に接続した場合は第二結合アクセント価を足す
+                                    else:  
                                         out_accent = out_mora + joint_value2
                                 break
-                    # step1.2: 複合名詞アクセント結合規則
                     elif acc_joint[0] == "C":
                         if acc_joint == "C1":       # 自立語結合保存型
                             out_accent = out_mora + acc_position
@@ -156,7 +151,7 @@ def get_accent(phrase):
                         if acc_joint == "C10":       # その他
                             out_accent = out_accent
         else:
-            if len(accent_info) == 0:       # 文節の先頭の時
+            if len(accent_info) == 0:       
                 out_accent = acc_position
         
         accent_info.append((mora, acc_position, acc_joint, acc_metric, pos))
@@ -170,7 +165,7 @@ def get_accent(phrase):
         hl.append("H")
         for i in xrange(out_mora-1):
             hl.append("L")
-    else:       # それ以外
+    else:
         hl.append("L")
         for i in xrange(out_accent-1):
             hl.append("H")
@@ -205,7 +200,7 @@ def get_phrase(phrase, phrase_info):
     acc_idx = 0
     for word in phrase:
         sur = word.split("\t")[0]
-        if en_p.match(unicode(sur)):      # 英語の時
+        if en_p.match(unicode(sur)):
             word = parse_eng_word(sur)
         kana = word.split("\t")[1].split(",")[-1]
         if kana == "*":
@@ -215,10 +210,7 @@ def get_phrase(phrase, phrase_info):
         kana = "".join(kana.split("ー"))
         kana = "N".join(kana.split("ン"))
         word_alpha = split_alpha(kana)
-
         word_lyrics = {"sur":sur, "kana":kana, "info":word, "syllable":[]}
-
-
         for w_a in word_alpha:
             syllable_lyrics = {}
             out_char = [w_a[0], w_a[1]]
@@ -227,7 +219,7 @@ def get_phrase(phrase, phrase_info):
                 syllable_lyrics["roma"] = w_a[1]
                 syllable_lyrics["accent"] = "*"
             else:
-                if len(accent) <= mora:      # 読みがながuniとipaでずれるときはしかたないから最終単語のアクセントをそのまま使う
+                if len(accent) <= mora:      
                     syllable_lyrics["sur"] = w_a[0]
                     syllable_lyrics["roma"] = w_a[1]
                     syllable_lyrics["accent"] = accent[-1]
@@ -334,7 +326,7 @@ def open_ust(file_name):
                     h, m = divmod(m, 60)
                     instance["StartTimeReadable"] = "%d/%d/%s"%(h, m, s)
                     instance["Duration"] = str(60.0/bpm*(float(instance["Length"])/480.0))
-                if instance.get("Lyric", None):     #ひらがなだけにする(たまにVOCALO語が混じっている)
+                if instance.get("Lyric", None):     
                     if len(instance["Lyric"].split(" ")) > 1:
                         instance["Lyric"] = instance["Lyric"].split(" ")[-1]
                     if "R" in instance["Lyric"] or "息" in instance["Lyric"]:
