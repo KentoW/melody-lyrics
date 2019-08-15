@@ -8,15 +8,15 @@ In progress (512 songs / 1,000 songs)
 We provide scripts for melody-lyric alignment.
 
 ## Requirement
-`Python 2`  
+`Python2`  
 `pip install romkan`  
 `pip install jaconv`  
 `pip install jcconv`  
  
   install [stanford corenlp pywrapper](https://github.com/brendano/stanford_corenlp_pywrapper)  
 
-Japanese Morpheme Parser `Mecab`  
-Japanese Dependency Parser `CaboCha`  
+Japanese Morpheme Parser `Mecab` [url](https://taku910.github.io/mecab/)
+Japanese Dependency Parser `CaboCha` [url](https://taku910.github.io/cabocha/)
 python module for `MeCab` and `CaboCha`  
 `MeCab` Dictionary `ipadic` and `UniDic`
 
@@ -24,9 +24,18 @@ python module for `MeCab` and `CaboCha`
 
 
 ## Usage
-### 0. Prepare dictionary files
+### 0a. Change default encoding
+Change directory python site-packages (e.g. ~/anaconda2/envs/py2/lib/python2.3/site-packages/).
+Edit `sitecustomize.py`
+```
+import sys
+sys.setdefaultencoding("utf-8")
+```
+
+### 0b. Prepare dictionary files
 ```shell
-wget http://nlp.stanford.edu/software/stanford-corenlp-full-2013-06-20.zip
+wget http://nlp.stanford.edu/software/stanford-corenlp-full-2013-06-20.zip 
+unzip stanford-corenlp-full-2013-06-20.zip
 ```
 Download `ipadic` and `unidic` from [MeCab: Yet Another Part-of-Speech and Morphological Analyzer](http://taku910.github.io/mecab/) and [UniDic](http://unidic.ninjal.ac.jp/download).  
 ```shell
@@ -67,10 +76,14 @@ cp melody.ust pair_data/sample/sample.ust
 ```
 
 ### 3. Run!
-`python align_data.py > data.txt`
+* Text format 
+`python align_data_readable.py > data.txt`
+
+* JSON format 
+`python align_data_json.py > data.jsonl`
 
 ## Data format
-See sample `data.txt`
+See sample `data.txt` or `data.jsonl`
 
 
 ---

@@ -1,0 +1,2 @@
+dir_name:sample	score:0.824324324324
+average_score:0.824324324324
